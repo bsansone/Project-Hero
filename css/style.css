@@ -28,3 +28,8 @@ h1 {
 .table-hover tbody tr:hover th {
     background-color: #1d1d1d;
 }
+
+th,
+td {
+    text-align: center;
+}
