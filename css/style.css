@@ -1,7 +1,8 @@
 body {
     color: ghostwhite;
     font-family: 'Lato', sans-serif;
-    background: url("../imgs/bg.jpg");
+    /*    background: url("../imgs/bg.jpg");*/
+    background-color: #d75600;
     background-repeat: no-repeat;
 }
 
