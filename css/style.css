@@ -1,0 +1,29 @@
+body {
+    color: ghostwhite;
+    font-family: 'Lato', sans-serif;
+    background: url("../imgs/bg.jpg");
+    background-repeat: no-repeat;
+}
+
+div.page-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    filter: alpha(opacity=60);
+    /* For IE8 and earlier */
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
+
+#sidebar-wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    filter: alpha(opacity=60);
+    /* For IE8 and earlier */
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    background-color: #1d1d1d;
+}
