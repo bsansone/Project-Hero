@@ -33,3 +33,8 @@ th,
 td {
     text-align: center;
 }
+
+#menu-toggle {
+    color: inherit;
+    background-color: inherit;
+}
