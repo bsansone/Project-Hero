@@ -49,3 +49,7 @@ td {
     border: 1px solid;
     border-color: black;
 }
+
+#marker {
+    float: right;
+}
