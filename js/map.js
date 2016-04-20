@@ -25,6 +25,11 @@ var markersData = [
    } 
 ];
 
+// Each marker is labeled with a single alphabetical character.
+var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var labelIndex = 0;
+
+
 // This function will iterate over markersData array
 // creating markers with createMarker function
 function displayMarkers(){
@@ -57,6 +62,7 @@ function createMarker(latlng, name, address1, address2, postalCode){
    var marker = new google.maps.Marker({
       map: map,
       position: latlng,
+      label: labels[labelIndex++ % labels.length],
       title: name
    });
 
@@ -67,7 +73,7 @@ function createMarker(latlng, name, address1, address2, postalCode){
       
       // Variable to define the HTML content to be inserted in the infowindow
       var iwContent = '<div id="iw_container">' +
-      '<div class="iw_title">' + name + '</div>' +
+      '<div class="iw_title"><strong>' + name + '</strong></div>' +
       '<div class="iw_content">' + address1 + '<br />' +
       address2 + '<br />' +
       postalCode + '</div></div>';
