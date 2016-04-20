@@ -77,16 +77,16 @@
                         </div>
                         <div class="page-content">
                             <!--                            <iframe src="https://calendar.google.com/calendar/embed?src=bsansone%40hawk.iit.edu&ctz=America/Chicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
-                            <u><h4>Description</h4></u>
+<!--                             <u><h4>Description</h4></u>
                             <p>
-                                Lorem ipsum dolor sit amet, mazim verear voluptua qui et, ut vix feugait menandri. Ad vel affert platonem. Et mei insolens scribentur. Nisl dicta laudem sea ut, dictas perpetua ea pro, primis propriae eos no. Lorem ipsum dolor sit amet, mazim verear voluptua qui et, ut vix feugait menandri. Ad vel affert platonem. Et mei insolens scribentur. Nisl dicta laudem sea ut, dictas perpetua ea pro, primis propriae eos no.
+                                Here you can find a calendar list of events that Project Hero is organizing and other events we think you might like.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, mazim verear voluptua qui et, ut vix feugait menandri. Ad vel affert platonem. Et mei insolens scribentur. Nisl dicta laudem sea ut, dictas perpetua ea pro, primis propriae eos no. Lorem ipsum dolor sit amet, mazim verear voluptua qui et, ut vix feugait menandri. Ad vel affert platonem. Et mei insolens scribentur. Nisl dicta laudem sea ut, dictas perpetua ea pro, primis propriae eos no.
+                                Upcoming event will be listed at the top and each event has a name, location, and date/time. If you want to find out more, click the details button!   
                             </p>
 
-                            <br/>
-                            <table class="table table-hover table-responsive">
+                            <br/> -->
+<!--                             <table class="table table-hover table-responsive">
                                 <thead>
                                     <tr>
                                         <th>Title</th>
@@ -127,6 +127,62 @@
                                         </td>
                                     </tr>
                                 </tbody>
+                            </table> -->
+                            <div id="map"></div>
+                                 
+                            <br />
+
+                            <table class="table table-responsive">
+                                <tbody>
+                                    <tr>
+                                    <td>
+                                        <p>
+                                            <strong>Filling out FAFSA</strong>
+                                            
+                                        </p>
+                                        <p>
+                                            <em>IIT - Wishnick Hall</em><br />
+                                            <em>Wednesday, April 20, 2016</em><br /> 
+                                            <em>6:30PM - 7:30PM</em>
+                                        </p>
+                                        <p id="eDetail">
+                                            Come hang out with the Illinois Institute of Technology financial aid office and get help and tips for filling out your FAFSA.
+                                        </p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>
+                                        <p>
+                                            <strong>How to get a Scholarship</strong>
+                                            
+                                        </p>
+                                        <p>
+                                            <em>Bridgeport Community Center</em><br />
+                                            <em>Tuesday, June 14, 2016</em><br /> 
+                                            <em>6:30PM - 7:30PM</em>
+                                        </p>
+                                        <p id="eDetail">
+                                            Listen to a recruiter from Northwestern speak about scholarships! Where to look for one, how to apply, deadlines, etc.
+                                        </p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>
+                                        <p>
+                                            <strong>Project Hero Presentation - Rags to Riches</strong>
+                                            
+                                        </p>
+                                        <p>
+                                            <em>De La Salle Institute - Chicago</em><br />
+                                            <em>Friday, June 17, 2016</em><br /> 
+                                            <em>5:00PM - 6:00PM</em>
+                                        </p>
+                                        <p id="eDetail">
+                                            Here the story of Ryan McArthur and how he grew up in Pilsen with just him and his mom and is now the CEO of his company.
+                                        </p>
+                                    </td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -137,6 +193,24 @@
 
     </div>
     <!-- /#wrapper -->
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+    <script>
+      function initMap() {
+        var chicago = {lat: 41.878114, lng: -87.629798}; 
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: chicago,
+          zoom: 11
+        });
+
+
+      }
+    </script>
+
+
 
     <!-- jQuery -->
     <script src="js/jquery.js "></script>
