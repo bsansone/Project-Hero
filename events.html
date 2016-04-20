@@ -23,6 +23,8 @@
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 
+    <!-- maps -->
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -194,23 +196,9 @@
     </div>
     <!-- /#wrapper -->
 
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
-    <script>
-      function initMap() {
-        var chicago = {lat: 41.878114, lng: -87.629798}; 
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-          center: chicago,
-          zoom: 11
-        });
-
-
-      }
-    </script>
-
-
+    <!-- Google Maps Stuff -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/map.js"></script> 
 
     <!-- jQuery -->
     <script src="js/jquery.js "></script>
