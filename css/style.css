@@ -6,23 +6,13 @@ body {
     background-repeat: no-repeat;
 }
 
-
-/*
-div.page-content {
-    background-color: rgb(0, 173, 239);
-    padding: 30px;
-    filter: alpha(opacity=60);
-    For IE8 and earlier
-}
-*/
-
 h1 {
     color: black;
-    /*    text-shadow: 2px 2px 0px black;*/
 }
 
 #sidebar-wrapper {
     background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: #e95420;*/
     filter: alpha(opacity=60);
     /* For IE8 and earlier */
 }
@@ -33,11 +23,9 @@ td {
 }
 
 #menu-toggle {
-
     border: none;
     color: inherit;
     background-color: inherit;
-
 }
 
 #map {
