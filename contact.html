@@ -87,6 +87,9 @@
                                 <em>Fill out the form below!</em>
                             </p>
                             <br />
+                            <div id="formSent" >
+                                
+                            </div>
                             <form id="contactForm" class="form-horizontal" role="form" method="post" action="">
                                 <div class="form-group">
                                     <label for="name" class="col-sm-2 control-label">Name</label>
@@ -136,6 +139,11 @@
         $("#menu-toggle").click(function (e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
+        });
+        $("#submit").click(function (e) {
+            e.preventDefault();
+            $("#contactForm").remove();
+            $("#formSent").append("<div class='alert alert-success'> <strong>Message Sent <span class='glyphicon glyphicon-ok'></span></strong></div>");
         });
     </script>
 </body>
